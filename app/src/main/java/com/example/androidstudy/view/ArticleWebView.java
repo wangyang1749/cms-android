@@ -28,7 +28,7 @@ public class ArticleWebView extends AppCompatActivity {
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         }
         settings.setJavaScriptEnabled(true);
-        settings.setBlockNetworkImage(false);
+//        settings.setBlockNetworkImage(false);
 
         // 设置WebView支持JavaScript
         settings.setJavaScriptEnabled(true);
@@ -36,31 +36,13 @@ public class ArticleWebView extends AppCompatActivity {
         settings.setUseWideViewPort(true);
         settings.setLoadWithOverviewMode(true);
 //        settings.setSupportZoom(true);  //支持放大缩小
-        settings.setBuiltInZoomControls(true); //显示缩放按钮
+//        settings.setBuiltInZoomControls(true); //显示缩放按钮
 //        settings.setBlockNetworkImage(true);// 把图片加载放在最后来加载渲染
         settings.setAllowFileAccess(true); // 允许访问文件
         final Intent intent = getIntent();
         String content = intent.getStringExtra("content");
 
-        String standard = "<html> \n" +
-                "<head> \n" +
-                "<style type=\"text/css\"> \n" +
-                "body {font-size:13px;margin:5px;}\n" +
-                "</style> \n" +
-                "</head> \n" +
-                "<body>" +
-                "<script type='text/javascript'>" +
-                "window.onload = function(){\n" +
-                "var $img = document.getElementsByTagName('img');\n" +
-                "for(var p in  $img){\n" +
-                " $img[p].style.width = '100%%';\n" +
-                "$img[p].style.height ='auto'\n" +
-                "}\n" +
-                "}" +
-                "</script>" +
-                content
-                + "</body>" +
-                "</html>";
+
         String url = CmsConst.BASE_URL +"/android/article/load/"+content+".html";
         webView.loadUrl(url);
 //        webView.loadData(content,"text/html","UTF-8");

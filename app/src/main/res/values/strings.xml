@@ -14,4 +14,7 @@
     <string name="create_new">Menu2</string>
     <string name="open">Menu3</string>
     <string name="refresh">刷新</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
