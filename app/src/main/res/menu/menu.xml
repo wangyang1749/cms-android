@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<!--    <item android:id="@+id/logout"-->
+<!--        android:title="@string/file" >-->
+<!--        &lt;!&ndash; "file" submenu &ndash;&gt;-->
+
+<!--    </item>-->
+    <item android:id="@+id/refresh"
+        android:title="@string/refresh"
+        />
+<!--    <item android:id="@+id/open"-->
+<!--        android:title="@string/open" />-->
+</menu>
