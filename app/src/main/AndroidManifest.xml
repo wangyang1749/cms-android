@@ -3,6 +3,9 @@
     package="com.example.androidstudy">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
 
     <application
         android:name=".CmsApplication"
@@ -15,6 +18,7 @@
         <activity android:name=".view.ArticleWebView"></activity>
         <activity android:name=".view.EditActivity" />
         <activity android:name=".view.MyLoginActivity" />
+        <activity android:name=".view.SocketView" />
         <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
